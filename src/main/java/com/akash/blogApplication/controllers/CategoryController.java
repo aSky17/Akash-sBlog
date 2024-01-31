@@ -43,6 +43,7 @@ public class CategoryController {
 
     //getAll
 
+    @GetMapping("/")
     public ResponseEntity<List<CategoryDto>> getAllCategories() {
         List<CategoryDto> categoryDtos = this.categoryService.getAllCategories();
         return ResponseEntity.ok(categoryDtos);
